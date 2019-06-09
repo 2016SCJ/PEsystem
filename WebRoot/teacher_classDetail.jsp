@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" errorPage="callMe.jsp"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -7,14 +7,18 @@
     
     <title>My JSP 'teacher_classDetail.jsp' starting page</title>
     <script type="text/javascript" src="js/js.js" charset="UTF-8"></script>  <!-- 注意引用javasrript的路径 -->
-
+	<style type="text/css">
+		#d1{margin-top: 30px;}
+		#t1{border-collapse: collapse; background-color: #FFFACD; font-size: 20px;}
+		#t11{font-weight: bolder;}
+	</style>
   </head>
   
   <body>
     <%@ include file="teacher_title.jsp" %>
-    
-    <table border="1" width="60%"  border="0" cellpadding="3" cellspacing="1" bgcolor="#CBD8AC" style="margin-bottom:8px;margin-top:8px;">
-		<tr>
+    <div id="d1">
+    <table id="t1" align="center" frame="border" width="90%" height="100px" border="1">
+		<tr valign="middle" align="center" id="t11">
 			<th>学号</th>
 			<th>姓名</th>
 			<th>性别</th>
@@ -22,9 +26,10 @@
 			<th>理论成绩</th>
 			<th>期末考核成绩</th>
 			<th>总成绩</th>
+			<th></th>
 		</tr>
 		<s:iterator value="myClassStudent" status="st" var="mcs">
-		<tr align="center" >
+		<tr valign="middle" align="center" >
 			<td><s:property value="#mcs.student.stuNo"/></td>
 			<td><s:property value="#mcs.student.stuName"/></td>
 			<td><s:property value="#mcs.student.stuSex"/></td>
@@ -38,5 +43,6 @@
 		</tr>
 		</s:iterator>
 	</table>
+	</div>
   </body>
 </html>

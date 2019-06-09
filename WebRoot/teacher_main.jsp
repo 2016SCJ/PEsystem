@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" errorPage="callMe.jsp"%>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -18,7 +18,9 @@
   </head>
   
   <body>
+  	<h1 align="center">教师控制台</h1>
+  	<hr color="red">
     <%@ include file="teacher_title.jsp" %>
-	这里是教师控制台...<br/>
+	
   </body>
 </html>

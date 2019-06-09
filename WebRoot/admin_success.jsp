@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" errorPage="callMe.jsp"%>
 
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -6,12 +6,16 @@
   <head>
     
     <title>My JSP 'admin_success.jsp' starting page</title>
-
+	<style type="text/css">
+		#d1{margin-top: 30px; }
+		h1{color:red;}
+	</style>
   </head>
   
   <body>
     <%@ include file="admin_title.jsp" %>
-    
-	操作成功<br/>
+    <div id="d1" align="center">
+	<h1>操作成功</h1>
+	</div>
   </body>
 </html>

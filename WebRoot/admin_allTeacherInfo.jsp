@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" errorPage="callMe.jsp"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 
@@ -8,21 +8,26 @@
     
     <title>My JSP 'admin_allTeacherInfo.jsp' starting page</title>
     <script type="text/javascript" src="js/js.js" charset="UTF-8"></script>
-
+	<style type="text/css">
+		#d1{margin-top: 30px;}
+		#t1{border-collapse: collapse; background-color: #FFFACD; font-size: 20px;}
+		#t11{font-weight: bolder;}
+	</style>
   </head>
   
   <body>
     <%@ include file="admin_title.jsp" %>
-    
-    <table border="1" width="60%"  border="0" cellpadding="3" cellspacing="1" bgcolor="#CBD8AC" style="margin-bottom:8px;margin-top:8px;">
-		<tr>
-			<th>工号</th>
-			<th>姓名</th>
-			<th>性别</th>
-			<th>手机号码</th>
+    <div id="d1">
+  	<table id="t1" align="center" frame="border" width="90%" height="200px" border="1">
+  		<tr valign="middle" align="center" id="t11">
+			<th>工&emsp;号</th>
+			<th>姓&emsp;名</th>
+			<th>性&emsp;别</th>
+			<th>手&nbsp;机&nbsp;号&nbsp;码</th>
+			<th></th>
 		</tr>
 		<s:iterator value="allTeacherInfo" status="st" var="ut">
-		<tr align="center" >
+		<tr align="center" valign="middle">
 			<td><s:property value="#ut.teaNo"/></td>
 			<td><s:property value="#ut.teaName"/></td>
 			<td><s:property value="#ut.teaSex"/></td>
@@ -50,5 +55,6 @@
 			</c:choose>
 	[<a href="admin_allTeaAction?pageNo=${totalPage}">尾页</a>]
 	-->
+	</div>
   </body>
 </html>

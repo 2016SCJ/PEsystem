@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" errorPage="callMe.jsp"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
@@ -8,16 +8,20 @@
     
     <title>My JSP 'student_showAllClass.jsp' starting page</title>
     <script type="text/javascript" src="js/js.js" charset="UTF-8"></script>  <!-- 注意引用javasrript的路径 -->
-
+	<style type="text/css">
+		#d1{margin-top: 30px;}
+		#t1{border-collapse: collapse; background-color: #FFFACD; font-size: 20px;}
+		#t11{font-weight: bolder;}
+	</style>
   </head>
   
   <body>
   <%@ include file="student_title.jsp" %>
-  
-    <table border="1" width="60%"  border="0" cellpadding="3" cellspacing="1" bgcolor="#CBD8AC" style="margin-bottom:8px;margin-top:8px;">
-		<tr>
+  <div id="d1">
+  	<table id="t1" align="center" frame="border" width="90%" height="200px" border="1">
+  		<tr valign="middle" align="center" id="t11">
 			<th>开课班编号</th>
-			<th>课程名</th>
+			<th>课&ensp;程&ensp;名</th>
 			<th>授课教师</th>
 			<th>上课地点</th>
 			<th>上课时间</th>
@@ -26,7 +30,7 @@
 			<th>是否选课</th>
 		</tr>
 		<s:iterator value="allClass" status="st" var="ac">
-		<tr align="center" >
+		<tr align="center" valign="middle">
 			<td><s:property value="#ac[0]"/></td>
 			<td><s:property value="#ac[1]"/></td>
 			<td><s:property value="#ac[2]"/></td>
@@ -54,5 +58,6 @@
 			</c:choose>
 	[<a href="student_showAllClassAction?pageNo=${totalPage}">尾页</a>]
 	-->
+	</div>
   </body>
 </html>
