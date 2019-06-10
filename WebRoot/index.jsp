@@ -3,6 +3,15 @@
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
+<!-- 
+	@author 陈志斌
+	对界面进行美化设计
+	
+	@author 黄泽彬
+	编写登陆的表单
+ -->
+
   <head>
    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
     <title>登陆界面</title>

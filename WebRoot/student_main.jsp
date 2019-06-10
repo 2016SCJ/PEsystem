@@ -2,6 +2,11 @@
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
+<!-- 
+	@author 黄泽彬
+ -->
+
   <head>
     
     <title>学生个人信息</title>

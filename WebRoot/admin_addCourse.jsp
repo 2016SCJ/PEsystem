@@ -3,6 +3,15 @@
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
+<!-- 
+	@author 陈志斌
+	对界面进行美化设计
+	
+	@author 杨希凯
+	编写添加课程表单
+ -->
+
   <head>
     
     <title>My JSP 'admin_addCourse.jsp' starting page</title>

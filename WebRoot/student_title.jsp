@@ -2,6 +2,15 @@
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
+<!-- 
+	@author 陈志斌
+	对界面进行美化设计
+	
+	@author 黄泽彬
+	对导航条的链接进行整合
+ -->
+
   <head>
     
     <title>My JSP 'student_title.jsp' starting page</title>

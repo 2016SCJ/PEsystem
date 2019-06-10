@@ -4,6 +4,15 @@
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
+<!-- 
+	@author 陈志斌
+	对界面进行美化设计
+	
+	@author 黄泽彬
+	显示所有开课班信息
+ -->
+
   <head>
     
     <title>My JSP 'admin_allStartClassInfo.jsp' starting page</title>

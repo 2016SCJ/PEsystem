@@ -3,6 +3,15 @@
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
+<!-- 
+	@author 陈志斌
+	对界面美化设计
+	
+	@author 陈志斌
+	指定班级学生的信息展示
+ -->
+
   <head>
     
     <title>My JSP 'teacher_classDetail.jsp' starting page</title>

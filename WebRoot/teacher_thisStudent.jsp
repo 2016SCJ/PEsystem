@@ -3,6 +3,15 @@
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
+<!-- 
+	@author 陈志斌
+	对界面美化设计
+	
+	@author 陈志斌
+	教师给学生添加成绩
+ -->
+
   <head>
     
     <title>My JSP 'teacher_thisStudent.jsp' starting page</title>

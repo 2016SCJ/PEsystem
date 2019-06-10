@@ -3,6 +3,15 @@
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
+<!-- 
+	@author 陈志斌
+	对界面美化设计
+	
+	@author 魏子敬
+	添加学生的表单设计
+ -->
+
   <head>
     
     <title>My JSP 'admin_addStu.jsp' starting page</title>
