@@ -12,7 +12,12 @@ import com.opensymphony.xwork2.ModelDriven;
 import domain.TUser;
 import service.UserService;
 
-
+/**
+ * 
+ * 登陆Action,判断是哪种用户类型进行登陆，并对用户名和密码进行确认，登陆成功后将用户类型保存在session中
+ * @author 黄泽彬
+ *
+ */
 public class LoginAction extends ActionSupport implements ModelDriven<TUser>{
 	@Resource(name="userService")
 	private UserService userService;

@@ -6,6 +6,13 @@ import org.apache.struts2.ServletActionContext;
 
 import com.opensymphony.xwork2.ActionSupport;
 
+/**
+ * 
+ * 用户退出登录的Action，清空session登陆的用户标志
+ * @author 黄泽彬
+ *
+ */
+
 public class LogoutAction extends ActionSupport{
 	public String execute() throws Exception{
 		HttpSession mySession = ServletActionContext.getRequest().getSession(); 

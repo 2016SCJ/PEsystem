@@ -55,13 +55,13 @@ public class Admin_addStuAction extends ActionSupport{
 		
 		if(addName.length()<=0 || addName.length()>30)
 			this.addFieldError("addName", "请输入姓名，并且姓名的长度不能大于30");
-		else if(addProfession.length()<=0 || addProfession.length()>15)
-			this.addFieldError("addProfession", "请输入正确的专业，且长度不能大于15位");
-		else{
-			this.proId=adminService.admin_findProfession(addProfession);
-			if(this.proId==null)
-				this.addFieldError("addProfession", "没有找到该专业，请联系数据库管理员");
-		}
+//		else if(addProfession.length()<=0 || addProfession.length()>15)
+//			this.addFieldError("addProfession", "请输入正确的专业，且长度不能大于15位");
+//		else{
+//			this.proId=adminService.admin_findProfession(addProfession);
+//			if(this.proId==null)
+//				this.addFieldError("addProfession", "没有找到该专业，请联系数据库管理员");
+//		}
 	}
 	
 	public String execute() throws Exception{
