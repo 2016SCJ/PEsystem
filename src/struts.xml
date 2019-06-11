@@ -23,7 +23,7 @@
         </interceptors>
         
         <!-- ==========User==================================================================== -->
-        <!-- 登陆界面的Action -->
+        <!-- 首页登陆 -->
         <action name="loginAction" class="web.action.LoginAction">
 			<result name="student">/student_main.jsp</result>
 			<result name="teacher">/teacher_main.jsp</result>
@@ -38,7 +38,8 @@
 		</action>
 		<!-- ==================================================================================== -->
 		
-		<!-- ==========Student================ -->
+		
+		<!-- ==========Student=================================================================== -->
 		<!-- 学生显示个人信息 -->
 		<action name="student_infoAction" class="web.action.Student_infoAction">
 			<interceptor-ref name="myStack"></interceptor-ref>
@@ -137,7 +138,6 @@
 			<interceptor-ref name="myStack"></interceptor-ref>
 			<result name="error">/unLogin.jsp</result>
 			<result name="success">/admin_stuInfo.jsp</result>
-			
 		</action>
 		<!-- admin 删除某一个学生 -->
 		<action name="admin_deleteThisStuAction" class="web.action.Admin_deleteThisStuAction">  
