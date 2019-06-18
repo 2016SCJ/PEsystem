@@ -33,39 +33,39 @@ public class Admin_addStuAction extends ActionSupport{
 		return false;
 	}
 	
-	public boolean isSpecialChar(String str) {  //trueÎª°üº¬£¬falseÎª²»°üº¬
-        String regEx = "[ _`~!@#$%^&*()+=|{}':;',\\[\\].<>/?~£¡@#£¤%¡­¡­&*£¨£©¡ª¡ª+|{}¡¾¡¿¡®£»£º¡±¡°¡¯¡££¬¡¢£¿]|\n|\r|\t";
+	public boolean isSpecialChar(String str) {  //trueä¸ºåŒ…å«ï¼Œfalseä¸ºä¸åŒ…å«
+        String regEx = "[ _`~!@#$%^&*()+=|{}':;',\\[\\].<>/?~ï¼@#ï¿¥%â€¦â€¦&*ï¼ˆï¼‰â€”â€”+|{}ã€ã€‘â€˜ï¼›ï¼šâ€â€œâ€™ã€‚ï¼Œã€ï¼Ÿ]|\n|\r|\t";
         Pattern p = Pattern.compile(regEx);
         Matcher m = p.matcher(str);
         return m.find();
     }
 	
 	public void validate(){
-		System.out.println("ĞÕÃû="+addName+" ĞÔ±ğ="+addSex+" ×¨Òµ="+addProfession);
+		System.out.println("å§“å="+addName+" æ€§åˆ«="+addSex+" ä¸“ä¸š="+addProfession);
 		
 		String tempName=addName;
 		if(tempName.trim().length()==0)
-			this.addFieldError("addName", "ÇëÊäÈëÕıÈ·µÄĞÕÃû");
+			this.addFieldError("addName", "è¯·è¾“å…¥æ­£ç¡®çš„å§“å");
 		
 		if(testNumber(addName)==true)
-			this.addFieldError("addName", "ĞÕÃû²»ÄÜ°üº¬Êı×Ö");
+			this.addFieldError("addName", "å§“åä¸èƒ½åŒ…å«æ•°å­—");
 		
 		if(isSpecialChar(addName)==true)
-			this.addFieldError("addName", "ĞÕÃû²»ÄÜ°üº¬ÌØÊâ×Ö·û");
+			this.addFieldError("addName", "å§“åä¸èƒ½åŒ…å«ç‰¹æ®Šå­—ç¬¦");
 		
 		if(addName.length()<=0 || addName.length()>30)
-			this.addFieldError("addName", "ÇëÊäÈëĞÕÃû£¬²¢ÇÒĞÕÃûµÄ³¤¶È²»ÄÜ´óÓÚ30");
-//		else if(addProfession.length()<=0 || addProfession.length()>15)
-//			this.addFieldError("addProfession", "ÇëÊäÈëÕıÈ·µÄ×¨Òµ£¬ÇÒ³¤¶È²»ÄÜ´óÓÚ15Î»");
-//		else{
-//			this.proId=adminService.admin_findProfession(addProfession);
-//			if(this.proId==null)
-//				this.addFieldError("addProfession", "Ã»ÓĞÕÒµ½¸Ã×¨Òµ£¬ÇëÁªÏµÊı¾İ¿â¹ÜÀíÔ±");
-//		}
+			this.addFieldError("addName", "è¯·è¾“å…¥å§“åï¼Œå¹¶ä¸”å§“åçš„é•¿åº¦ä¸èƒ½å¤§äº30");
+		else if(addProfession.length()<=0 || addProfession.length()>15)
+			this.addFieldError("addProfession", "è¯·è¾“å…¥æ­£ç¡®çš„ä¸“ä¸šï¼Œä¸”é•¿åº¦ä¸èƒ½å¤§äº15ä½");
+		else{
+			this.proId=adminService.admin_findProfession(addProfession);
+			if(this.proId==null)
+				this.addFieldError("addProfession", "æ²¡æœ‰æ‰¾åˆ°è¯¥ä¸“ä¸šï¼Œè¯·è”ç³»æ•°æ®åº“ç®¡ç†å‘˜");
+		}
 	}
 	
 	public String execute() throws Exception{
-		System.out.println("×¨ÒµµÄIDÎª£º"+this.proId);
+		System.out.println("ä¸“ä¸šçš„IDä¸ºï¼š"+this.proId);
 		Student student = new Student();
 		Profession profession = new Profession();
 		profession.setId(this.proId);
