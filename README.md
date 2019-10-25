@@ -1,4 +1,7 @@
 # PEsystem
+
+黄泽彬 朱润发 陈志斌<br/>
+
 version 0.3  final
 <hr/>
 1.增加界面美化<br/>
